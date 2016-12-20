@@ -23,3 +23,4 @@ app.get("/", function(request, response) {
 // }, 180000);
 
 app.listen(port);
+console.log("Server is listining on Port " + port + "\nPlease visit on url : http://localhost/"+ port);
