@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+  <head>
+    <script data-require="angular.js@1.5.6" data-semver="1.5.6" src="https://code.angularjs.org/1.5.6/angular.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <style>
+
+
+    *,
+    *::before,
+    *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    h1,h2,h3,h4,h5,h6{
+      color:#233240;
+    }
+    body {
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+
+    color: #fff;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+    }
+    .timeline1 {
+    white-space:nowrap;
+    overflow-x: scroll;
+    padding:30px 0 10px 0;
+    position:relative;
+    margin-bottom:10%;
+    }
+
+    .entry {
+    display:inline-block;
+    vertical-align:top;
+    background:rgba(241, 196, 15, 0.1);
+    color: #233240;
+    padding:10px;
+    font-size:12px;
+    text-align:center;
+    position:relative;
+    border-top:4px solid #233240;
+
+    border-radius:3px;
+    min-width:200px;
+    max-width:500px;
+    margin: 0 10px;
+    }
+
+    .entry img {
+    display:block;
+    max-width:100%;
+    height:auto;
+    margin-bottom:10px;
+    }
+
+    .entry:after {
+    content:'';
+    display:block;
+    background:#eee;
+    width:7px;
+    height:7px;
+    border-radius:6px;
+    border:3px solid #233240;
+    position:absolute;
+    left:50%;
+    top:-25px;
+    margin-left:-6px;
+    }
+
+    .entry:before {
+    content: '';
+    display: block;
+    background: #233240;
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: -23px;
+    margin-left: -5px;
+    }
+
+    .entry h1 {
+    color:#fff;
+    font-size:18px;
+    font-family:Georgia, serif;
+    font-weight:bold;
+    margin-bottom:10px;
+    }
+
+    .entry h2 {
+    letter-spacing:.2em;
+    margin-bottom:10px;
+    font-size:14px;
+    }
+
+    .bar {
+    height:4px;
+    background:#eee;
+    width:100%;
+    position:relative;
+    top:13px;
+    left:0;
+    }
+
+
+
+
+    /* TIMELINE 2
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .timeline{
+    background: #233240;
+    }
+    .timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+
+    }
+    .timeline ul li:last-child{
+    padding-bottom: 15px;
+    }
+    .timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+    }
+
+    .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #D8402B;
+    font-size: 12px;
+    }
+
+    .timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    }
+
+    .timeline ul li:nth-child(odd) div {
+    left: 45px;
+    }
+
+    .timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #D8402B transparent transparent;
+    }
+
+    .timeline ul li:nth-child(even) div {
+    left: -439px;
+    }
+
+    .timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #D8402B;
+    }
+
+
+    /*   bootstrtap*/
+    .navbar-default{
+    background-color: #233240;
+    border-color: #233240;
+    border-radius: 0px;
+    }
+    .navbar-default .navbar-brand{
+    color:#fff;
+    }
+    .text-center{
+    text-align: center;
+    color: #233240;
+
+    }
+
+
+    </style>
+  </head>
+  <nav class="navbar navbar-default">
+    <div class="container container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          Company Name
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <body ng-controller="main">
+
+      <div class="container">
+        <div class="row">
+          <h4>Search for another shipment</h4>
+          <form role="search">
+            <div class="col-md-5">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon1">Waybill</span>
+                <input type="text" class="form-control" placeholder="Waybill no" aria-describedby="sizing-addon1" ng-model="wb">
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon1">CP_id</span>
+                <input type="text" class="form-control" placeholder="CP_id" aria-describedby="sizing-addon1" ng-model="cp">
+              </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-success btn-lg" ng-click="search()">Search</button>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="bar"></div>
+          <div class="timeline1" ng-repeat= "package in packages">
+          <h1 ng-if="package.valid == false">{{message}}</h1>
+             <div class="entry" ng-repeat="t in package.scans | orderBy:'':true ">
+
+                  <p> - Current Status -  </p>
+                 <p>{{t.remark}}</p>
+                 <p>{{t.status}} {{t.location}}</p>
+                 <p>On : {{t.timestamp | date:'dd/MM/yyyy @ h:mma'}}</p>
+                 <p>{{t.clickpost_status_description}}</p>
+                 <p></p>
+             </div>
+          </div>
+        </div>
+      </div>
+        <h4 class="text-center"> Second Option</h4>
+      <div class="timeline">
+        <ul ng-repeat= "package in packages">
+          <li ng-repeat="t in package.scans | orderBy:'':true ">
+            <div>
+
+                <p> - Current Status -  </p>
+               <p>{{t.remark}}</p>
+               <p>{{t.status}} {{t.location}}</p>
+               <p>On : {{t.timestamp | date:'dd/MM/yyyy @ h:mma'}}</p>
+               <p>{{t.clickpost_status_description}}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+  </body>
+
+
+
+<script>
+var app = angular.module('myapp',[]);
+  app.controller('main', function($scope, $http){
+    var parmas = location.search ;
+    if( parmas){
+      var waybill = location.search.split('waybill=')[1].split('&')[0]
+      var cp_id =  location.search.split('cp_id=')[1];
+      var url = "http://www.clickpost.in/api/v2/track-order/?username=testuser&key=2e9b19ac-8e1f-41ac-a35b-4cd23f41ae17&waybill=" +waybill + "&cp_id=" +cp_id;
+    }else{
+      var url = 'http://www.clickpost.in/api/v2/track-order/?username=testuser&key=2e9b19ac-8e1f-41ac-a35b-4cd23f41ae17&waybill=3515341&cp_id=10';
+    }
+     $http.get(url).success(function(data){
+         $scope.packages = data.result;
+         console.log(data.result);
+         $scope.message = "Please Enter a Coorect Waybill Number or cp_id";
+     });
+
+     $scope.search = function(evt){
+       var wb = $scope.wb;
+       var cp = $scope.cp;
+      //  console.log(wb , cp);
+       var url = "http://www.clickpost.in/api/v2/track-order/?username=testuser&key=2e9b19ac-8e1f-41ac-a35b-4cd23f41ae17&waybill=" +wb + "&cp_id=" +cp;
+       $http.get(url).success(function(data){
+           $scope.packages = data.result;
+          //  console.log(data.result.valid);
+           $scope.message = "Please Enter a Coorect Waybill Number or cp_id";
+       });
+     };
+});
+
+</script>
+</html>
