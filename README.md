@@ -14,7 +14,7 @@
 
 
 
-Hi👋, I'm Sonu Kumar 👨‍🎓, a passionate self-taught front-end-developer from India. Apart from programming, I enjoy eating and traveling.
+Hi👋, I'm Sonu Kumar 👨‍🎓, a passionate self-taught front-end-developer from India. Apart from programming, I enjoy traveling.
 
 ```JS
 export default () => ({
