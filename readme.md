@@ -19,8 +19,8 @@ Hi👋, I'm Sonu Kumar 👨‍🎓, a passionate self-taught front-end-developer
 ```JS
 export default () => ({
   askMeAbout: [
-    "webdev", "tech", "music",
-    "gadgets", "research"
+    "webdev", "tech",
+    "gadgets", "travel"
   ],
   technologies: {
     frontEnd: {
