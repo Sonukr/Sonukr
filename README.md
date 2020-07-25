@@ -57,6 +57,6 @@ export default () => ({
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sonukr&hide_langs_below=1)](https://github.com/sonukr)
 
-[![HitCount](https://hits.dwyl.com/Sonukr/sonukr.svg)](http://hits.dwyl.com/Sonukr/sonukr)
+[![HitCount](https://hits.dwyl.com/Sonukr/Sonukr.svg)](http://hits.dwyl.com/Sonukr/Sonukr)
 
 ---
