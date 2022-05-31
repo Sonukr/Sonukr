@@ -13,7 +13,7 @@ A self-taught geek developer in web development 👨‍💻. I work in Javascrip
 - :earth_africa: I like to contribute to open source and explore github.
 - :handshake: If you want any collaboration feel free to mail me at sonuyadav9756@gmail.com.
 - :v: I'm open to opportunities.
-- :zap: Fun fact: I like to watch movies and enjoy traveling.
+- :zap: I like to watch movies and enjoy traveling.
 
 
 ---
