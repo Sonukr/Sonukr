@@ -11,7 +11,7 @@ A self-taught geek developer in web development 👨‍💻. I work in Javascrip
 
 - :seedling: I am currently improving my skills in Javascript and React.
 - :earth_africa: I like to contribute to open source and explore github.
-- :handshake: If you want any collaboration feel free to mail me at sonuyadav9756@gmail.com.
+<!-- - :handshake: If you want any collaboration feel free to mail me at sonuyadav9756@gmail.com. -->
 - :v: I'm open to opportunities.
 - :zap: I like to watch movies and enjoy traveling.
 
