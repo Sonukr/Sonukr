@@ -60,12 +60,14 @@ export default () => ({
 });
 ```
 
-## 📊GitHub Stats
-![](https://github-readme-stats.vercel.app/api?username=sonukr&include_all_commits=false&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=sonukr)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=sonukr&include_all_commits=false&count_private=true&layout=compact)
 
 
-[![HitCount](https://hits.dwyl.com/Sonukr/Sonukr.svg)](http://hits.dwyl.com/Sonukr/Sonukr)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=Sonukr&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=Sonukr&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sonukr&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+---
+[![](https://visitcount.itsvg.in/api?id=Sonukr&icon=6&color=2)](https://visitcount.itsvg.in)
 
 ---
