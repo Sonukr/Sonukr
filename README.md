@@ -3,11 +3,11 @@
   
   # :wave: Hello <b>developers</b>, I am <b>Sonu!</b>.
 
-  #### Frontend/UI Developer • Javascript • ReactJs 
+  #### Senior Software Developer • Javascript • NodeJS • ReactJs • Java
 </div>
 
 #  💫About Me
-A self-taught geek developer in web development 👨‍💻. I work in Javascript, with frontend and backend(Secondary) and proficient in MERN stack, created various projects using these tools. I highly drive myself to bring quality, interactive, and user-friendly applications with optimal solutions. The learning curve is always high and dedicated to technology for upskilling.
+A self-taught geek developer in web development 👨‍💻. I work in Javascript, with frontend and backend and proficient in MERN stack, created various projects using these tools. I highly drive myself to bring quality, interactive, and user-friendly applications with optimal solutions. The learning curve is always high and dedicated to technology for upskilling.
 
 - :seedling: I am currently improving my skills in Javascript and React.
 - :earth_africa: I like to contribute to open source and explore github.
@@ -52,6 +52,7 @@ export default () => ({
     backEnd: {
       js: ["node", "express"],
       ruby: ["ROR"],
+      java: ["Java", "Springboot"]
     },
     testing: ["Cypress", "Jest", "Enzyme"],
     languages: ["javascript", "Ruby"],
