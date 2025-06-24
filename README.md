@@ -3,7 +3,7 @@
   
   # :wave: Hello <b>developers</b>, I am <b>Sonu!</b>.
 
-  #### Senior Software Developer • Javascript • NodeJS • ReactJs • Java
+  #### • Senior Software Developer • Javascript • NodeJS • ReactJs • Java • 
 </div>
 
 #  💫About Me
