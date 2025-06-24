@@ -9,7 +9,7 @@
 #  💫About Me
 A self-taught geek developer in web development 👨‍💻. I work in Javascript, with frontend and backend and proficient in MERN stack, created various projects using these tools. I highly drive myself to bring quality, interactive, and user-friendly applications with optimal solutions. The learning curve is always high and dedicated to technology for upskilling.
 
-- :seedling: I am currently improving my skills in Javascript and React.
+- :seedling: I am currently improving my skills in Javascript, NodeJS, React and Java.
 - :earth_africa: I like to contribute to open source and explore github.
 <!-- - :handshake: If you want any collaboration feel free to mail me at sonuyadav9756@gmail.com. -->
 - :v: I'm open to opportunities.
